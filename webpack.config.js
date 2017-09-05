@@ -1,9 +1,10 @@
 const path = require('path');
-
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
+  plugins: [new CleanWebpackPlugin(['dist'])],
   //define entry point
   entry: './src/js/ping-pong-interface.js',
-
+  devtool: 'inline-source-map',
   // define output point
   output: {
     path: path.resolve(__dirname, 'dist'),

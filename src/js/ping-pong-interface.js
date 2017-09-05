@@ -1,3 +1,4 @@
+require('./../css/styles.css');
 var Compute = require('./../js/ping-pong.js');
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
